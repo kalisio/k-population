@@ -3,11 +3,11 @@
 [![Latest Release](https://img.shields.io/github/v/tag/kalisio/k-population?sort=semver&label=latest)](https://github.com/kalisio/k-population/releases)
 [![Build Status](https://app.travis-ci.com/kalisio/k-population.svg?branch=master)](https://app.travis-ci.com/kalisio/k-population)
 
-A processing job used to populate demography data from the French intitute [INSEE](https://www.insee.fr/).
+A processing job used to populate demography data from the French institute [INSEE](https://www.insee.fr/).
 
 ## Description
 
-The **k-population** job allows to ingest the INSEE [200m grid data](https://www.insee.fr/fr/statistiques/4176290?sommaire=4176305) starting from a GeoPackage. The data are stored within a [MongoDB](https://www.mongodb.com/) database, more precisely in a `population` collection, so that spatial analysis can be performed.
+The **k-population** job allows to ingest the INSEE [200m grid data](https://www.insee.fr/fr/statistiques/4176290?sommaire=4176305) starting from a set of GeoPackages. The data are stored within a [MongoDB](https://www.mongodb.com/) database, more precisely in a `population` collection, so that spatial analysis can be performed on-demand.
 
 All records are stored in [GeoJson](https://fr.wikipedia.org/wiki/GeoJSON) format.
 

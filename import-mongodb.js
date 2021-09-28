@@ -63,7 +63,7 @@ async function processGeoPackage (geoPackage, collection) {
         // Push to current chunk/count
         count++
         chunk.push(geoJson)
-        if (chunk.length === program.chunkSize) {
+        if (chunk.length === chunkSize) {
           await writeChunk(collection, chunk)
           // Proceed with next chunk
           chunk = []
