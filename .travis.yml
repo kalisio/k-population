@@ -19,7 +19,7 @@ script:
     IMAGE_TAG=$(node -p -e "require('./package.json').version")
   fi
   docker build -f dockerfile -t $IMAGE_NAME:$IMAGE_TAG .
-before_deploy:
+before_script:
 - docker login -u="$DOCKER_USER" -p="$DOCKER_PASSWORD"
 deploy:
   provider: script
